@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ShrikhandRegular';
+    src: url('fonts/ShrikhandRegular.eot');
+    src: url('fonts/ShrikhandRegular.eot') format('embedded-opentype'),
+         url('fonts/ShrikhandRegular.woff2') format('woff2'),
+         url('fonts/ShrikhandRegular.woff') format('woff'),
+         url('fonts/ShrikhandRegular.ttf') format('truetype'),
+         url('fonts/ShrikhandRegular.svg#ShrikhandRegular') format('svg');
+}
