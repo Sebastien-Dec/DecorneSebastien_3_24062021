@@ -1,11 +1,4 @@
 @import "../font/ShrikhandRegular.css";
 @import "../font/RobotoRegular.css";
-h1 {
-  font-family: "ShrikhandRegular", sans-serif;
-}
-
-p {
-  font-family: "RobotoRegular", sans-serif;
-}
 
 /*# sourceMappingURL=style.css.map */
