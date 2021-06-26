@@ -1,0 +1,43 @@
+.operation {
+    & h1 {
+        text-align: center;
+    }
+}
+
+.tab {
+    display: flex;
+    justify-content: space-evenly;
+
+    &__card {
+        background: $background-page;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        box-shadow: 0 0 5px 2px $background-page-darken;
+        text-align: center;
+        position: relative;
+    }
+
+    ul li {
+        margin:30px;
+        padding: 30px;
+        font-size: 1.2em;
+    }
+
+    &__number {
+        background: $primary;
+        border-radius: 100%;
+        padding: 8px 14px;
+        color: #fff;
+        position:absolute;
+        left: -15px;
+        bottom: 22px;
+    }
+
+    &__icon {
+        color: $color-icon;
+        margin: 0 20px 0 15px;
+        &--active {
+            color: $primary;
+        }
+    }
+}

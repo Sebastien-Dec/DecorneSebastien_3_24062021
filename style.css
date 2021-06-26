@@ -1,4 +1,155 @@
 @import "../font/ShrikhandRegular.css";
-@import "../font/RobotoRegular.css";
+@import "../font/Roboto.css";
+/* Colors */
+/* Font Family*/
+.btn {
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  color: #fff;
+  font-size: 1.1em;
+  border: 1px solid linear-gradient(0deg, #9356DC, #FF79DA);
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 0 0 5px 2px #c9c9c9;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.title h1 {
+  font-family: "ShrikhandRegular", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+  text-align: center;
+  position: relative;
+}
+.header__arrow {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  font-size: 1.2em;
+  color: #353535;
+}
+
+.location__position {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, #cfcfcf 1%, #eaeaea);
+  color: #353535;
+}
+.location__search {
+  background: #f6f6f6;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+.location__search p {
+  color: #4d4d4d;
+  padding-bottom: 20px;
+}
+
+.map-marker {
+  padding: 15px;
+}
+
+.operation h1 {
+  text-align: center;
+}
+
+.tab {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tab__card {
+  background: #f6f6f6;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px #f1f1f1;
+  text-align: center;
+  position: relative;
+}
+.tab ul li {
+  margin: 30px;
+  padding: 30px;
+  font-size: 1.2em;
+}
+.tab__number {
+  background: #9356DC;
+  border-radius: 100%;
+  padding: 8px 14px;
+  color: #fff;
+  position: absolute;
+  left: -15px;
+  bottom: 22px;
+}
+.tab__icon {
+  color: #7e7e7e;
+  margin: 0 20px 0 15px;
+}
+.tab__icon--active {
+  color: #9356DC;
+}
+
+.restaurant {
+  background: #f6f6f6;
+  padding: 30px 20px;
+}
+.restaurant a {
+  color: #000;
+}
+
+.rest-pres {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.rest-tab {
+  background: #fff;
+  border: 0px solid transparent;
+  border-radius: 20px;
+  position: relative;
+  width: 40%;
+  margin: 20px;
+}
+.rest-tab__img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  z-index: 1;
+}
+.rest-tab__new {
+  background: #99E2D0;
+  color: #278870;
+  font-size: 1.2em;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 10px 15px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 2;
+}
+.rest-tab__div {
+  padding-left: 20px;
+}
+.rest-tab__name {
+  margin-bottom: 5px;
+}
+.rest-tab__city {
+  font-size: 1.2em;
+  margin: 0;
+}
 
 /*# sourceMappingURL=style.css.map */

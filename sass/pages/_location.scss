@@ -1,0 +1,24 @@
+.location {
+    &__position {
+        display: flex;
+        justify-content: center;
+        background: $background-location;
+        color: $color-arrow;
+    }
+
+    &__search {
+        background: $background-page;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+
+    &__search p {
+        color: #4d4d4d;
+        padding-bottom: 20px;
+    }
+}
+
+.map-marker {
+    padding: 15px;
+}
