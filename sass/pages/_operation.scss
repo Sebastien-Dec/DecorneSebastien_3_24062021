@@ -1,12 +1,19 @@
 .operation {
-    & h1 {
+    & h2 {
         text-align: center;
+        font-family: $font-black;
+
+        @include mobil-only {
+            text-align: initial;
+            padding-left: 15px;
+        }
     }
 }
 
 .tab {
-    display: flex;
-    justify-content: space-evenly;
+    /*display: flex;
+    justify-content: space-evenly;*/
+    display:inline;
 
     &__card {
         background: $background-page;
@@ -17,10 +24,24 @@
         position: relative;
     }
 
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+
+        @include mobil-only {
+            display: block;
+            padding-left: 25px;
+        }
+    }
     ul li {
         margin:30px;
         padding: 30px;
         font-size: 1.2em;
+
+        @include mobil-only {
+            margin-left: 0;
+            margin-right: 15px;
+        }
     }
 
     &__number {

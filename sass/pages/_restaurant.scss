@@ -1,7 +1,12 @@
 .restaurant {
     background: $background-page;
     padding: 30px 20px;
-    & a {
+
+    h2 {
+        font-family: $font-black;
+    }
+
+    a {
         color: #000;
     }
 }
@@ -19,6 +24,11 @@
     position: relative;
     width: 40%;
     margin: 20px;
+
+    @include mobil-only {
+        width: 100%;
+        margin: 10px 0;
+    }
     
     
     &__img {
@@ -28,15 +38,20 @@
         border-radius: 20px 20px 0 0;
         position: relative;
         z-index: 1;
+
+        @include tablet-only {
+            height: 175px;
+        }
     }
 
     &__new {
         background: $tertiary;
         color: $tertiary-darken;
+        font-family: $font-black;
         font-size: 1.2em;
         border: 1px solid transparent;
         border-radius: 3px;
-        padding: 10px 15px;
+        padding: 10px 20px;
         position: absolute;
         right: 20px;
         top: 20px;
@@ -49,6 +64,7 @@
 
     &__name {
         margin-bottom: 5px;
+        font-family: $font-black;
     }
 
     &__city {

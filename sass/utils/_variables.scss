@@ -5,7 +5,7 @@ $secondary: #FF79DA;
 $tertiary: #99E2D0;
 $color-arrow: #353535;
 $color-icon: #7e7e7e;
-$tertiary-darken: darken($tertiary, 40%);
+$tertiary-darken: darken($tertiary, 45%);
 $background-page: #f6f6f6;
 $background-page-darken: darken($background-page, 2%);
 $background-btn: linear-gradient(0deg, $primary, $secondary);
@@ -14,4 +14,8 @@ $background-location:#eaeaea;
 /* Font Family*/
 $font-title: "ShrikhandRegular";
 $font-txt: "Roboto";
+$font-black: "RobotoBlack";
 
+/* Responsive */
+$mobil: 768px;
+$tablet: 991px;

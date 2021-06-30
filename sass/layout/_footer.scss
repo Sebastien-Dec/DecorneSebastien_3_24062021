@@ -1,6 +1,7 @@
 .footer {
     background: $color-arrow;
     color: #fff;
+    line-height: 25px;
     padding: 10px;
     position: relative;
 
@@ -11,14 +12,33 @@
     &__logo {
         filter: invert(100%) brightness(125%) contrast(100%);
         padding-left: 35px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mobil-only {
+            margin-left: 0;
+            margin-right: 0;
+            padding-top: 10px;
+            width: 100px;
+            position: absolute;
+            left: -15px;
+        }
     }
 
     &__list {
         position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+
+        @include mobil-only {
+            display: block;
+            padding-top: 25px;
+        }
     }
 
     &__txt {
-        position: absolute;
-        left: 80px;
+        padding-left: 10px;
     }
 }
