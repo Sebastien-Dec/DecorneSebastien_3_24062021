@@ -13,9 +13,6 @@
   src: url("../fonts/RobotoBlack.ttf") format("truetype");
   src: url("../fonts/RobotoBlack.eot") format("embedded-opentype"), url("../fonts/RobotoBlack.woff2") format("woff2"), url("../fonts/RobotoBlack.woff") format("woff"), url("../fonts/RobotoBlack.svg#RobotoBlack") format("svg");
 }
-/* Colors */
-/* Font Family*/
-/* Responsive */
 .btn {
   background: linear-gradient(0deg, #9356DC, #FF79DA);
   color: #fff;
@@ -33,6 +30,11 @@ body {
 
 .title h1 {
   font-family: "ShrikhandRegular";
+}
+
+h2,
+h3 {
+  font-family: "RobotoBlack";
 }
 
 a {
@@ -183,11 +185,12 @@ ul {
   background: #f6f6f6;
   padding: 30px 20px;
 }
-.restaurant h2 {
-  font-family: "RobotoBlack";
-}
 .restaurant a {
   color: #000;
+}
+.restaurant h2 {
+  text-align: center;
+  font-size: 2em;
 }
 
 .rest-pres {
@@ -241,7 +244,7 @@ ul {
 }
 .rest-tab__name {
   margin-bottom: 5px;
-  font-family: "RobotoBlack";
+  font-size: 1.3em;
 }
 .rest-tab__city {
   font-size: 1.2em;
@@ -261,6 +264,7 @@ ul {
 .footer__logo {
   filter: invert(100%) brightness(125%) contrast(100%);
   padding-left: 35px;
+  padding-top: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
