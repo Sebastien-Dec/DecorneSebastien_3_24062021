@@ -1,5 +1,3 @@
-@import "../font/ShrikhandRegular.css";
-@import "../font/Roboto.css";
 
 /* Colors */
 $primary: #9356DC;
@@ -14,6 +12,6 @@ $background-btn: linear-gradient(0deg, $primary, $secondary);
 $background-location:#eaeaea;
 
 /* Font Family*/
-$font-title: 'ShrikhandRegular', sans-serif;
-$font-txt: 'Roboto', sans-serif;
+$font-title: "ShrikhandRegular";
+$font-txt: "Roboto";
 

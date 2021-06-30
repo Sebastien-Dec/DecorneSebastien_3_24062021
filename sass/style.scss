@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/RobotoThin.ttf') format("truetype");
+    src: url('../fonts/RobotoThin.eot') format('embedded-opentype'),
+         url('../fonts/RobotoThin.woff2') format('woff2'),
+         url('../fonts/RobotoThin.woff') format('woff'),
+         url('../fonts/RobotoThin.svg#RobotoThin') format('svg');
+}
+
+@font-face {
+    font-family: 'ShrikhandRegular';
+    src: url('../fonts/ShrikhandRegular.ttf') format("truetype");
+    src: url('../fonts/ShrikhandRegular.eot') format('embedded-opentype'),
+         url('../fonts/ShrikhandRegular.woff2') format('woff2'),
+         url('../fonts/ShrikhandRegular.woff') format('woff'),
+         url('../fonts/ShrikhandRegular.svg#ShrikhandRegular') format('svg');
+}
+
 @import "./utils/variables";
 @import "./components/button";
 @import "./base/body";
