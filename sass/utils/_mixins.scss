@@ -16,3 +16,12 @@ $breakpoints: (
         @content
     }
 }
+
+@mixin box-shadow ($color: $color-shadow,$shadow-size: $shadow-size){
+    box-shadow: 0 0 $shadow-size+3px $shadow-size $color;
+}
+
+@mixin btn-hover ($color: darken($color-shadow, 20%), $shadow-size: $shadow-size){
+    box-shadow: 0 0 $shadow-size+3px $shadow-size $color;
+    background: $background-btn-lighten;
+}

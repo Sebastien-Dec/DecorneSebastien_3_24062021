@@ -24,8 +24,9 @@
   box-shadow: 0 0 5px 2px #c9c9c9;
 }
 .btn:hover {
-  background: #ff83dd;
+  background: linear-gradient(0deg, #a16be0, #ff93e1);
   box-shadow: 0 0 5px 2px #969696;
+  background: linear-gradient(0deg, #a16be0, #ff93e1);
 }
 
 body {
@@ -266,6 +267,7 @@ ul {
 
 .heart-full {
   z-index: -1;
+  color: #9356DC;
 }
 
 .footer {
