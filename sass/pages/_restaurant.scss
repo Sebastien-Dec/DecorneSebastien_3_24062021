@@ -68,6 +68,22 @@
 
     &__city {
         font-size: 1.2em;
-        margin: 0;
+        margin: 0 0 20px 0;
     }
+
+    &__heart {
+        position: absolute;
+        right: 20px;
+        font-size: 1.5em;
+        bottom: 40px;
+    }
+
+}
+
+.heart-empty {
+    z-index: 1;
+}
+
+.heart-full {
+    z-index: -1;
 }

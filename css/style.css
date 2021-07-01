@@ -23,6 +23,10 @@
   border-radius: 30px;
   box-shadow: 0 0 5px 2px #c9c9c9;
 }
+.btn:hover {
+  background: #ff83dd;
+  box-shadow: 0 0 5px 2px #969696;
+}
 
 body {
   font-family: "Roboto";
@@ -247,7 +251,21 @@ ul {
 }
 .rest-tab__city {
   font-size: 1.2em;
-  margin: 0;
+  margin: 0 0 20px 0;
+}
+.rest-tab__heart {
+  position: absolute;
+  right: 20px;
+  font-size: 1.5em;
+  bottom: 40px;
+}
+
+.heart-empty {
+  z-index: 1;
+}
+
+.heart-full {
+  z-index: -1;
 }
 
 .footer {
