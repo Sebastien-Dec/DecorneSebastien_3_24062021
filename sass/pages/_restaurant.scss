@@ -72,12 +72,12 @@
     }
 
     &__heart {
+        border: none;
+        background: transparent;
         position: absolute;
         right: 20px;
-        font-size: 1.5em;
         bottom: 40px;
     }
-
 }
 
 .heart-empty {
@@ -87,4 +87,5 @@
 .heart-full {
     z-index: -1;
     color: $primary;
+    visibility: hidden;
 }

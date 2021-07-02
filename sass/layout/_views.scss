@@ -17,9 +17,11 @@
         justify-content: center;
     }
 
-    /*&__heart {
+    &__heart {
+        border: none;
+        background: transparent;
         
-    }*/
+    }
 }
 
 .menu {

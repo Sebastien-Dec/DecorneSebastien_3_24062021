@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../css/style.css">
-    <script src="https://kit.fontawesome.com/ada4a84f05.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Ohmyfood</title>
 </head>
 <body>
@@ -16,8 +17,12 @@
         <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="title__img" tab="Le délice des sens" />
         <div class="title__txt">
             <h1>Le délice des sens</h1>
-            <i class="far fa-heart title__heart heart-empty"></i>
-            <i class="fas fa-heart title__heart heart-full"></i>
+            <button class="title__heart" type="button" action="heart-full">
+                <i class="fal fa-heart heart-empty"></i>
+            </button>
+            <button class="title__heart" type="button" action="heart-empty">
+            <i class="fas fa-heart heart-full"></i>
+            </button>
         </div>
     </section>
     <section class="menu">
