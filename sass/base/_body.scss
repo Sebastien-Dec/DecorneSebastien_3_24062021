@@ -1,0 +1,30 @@
+body {
+    font-family: $font-txt;
+    margin: 0;
+    z-index: 1;
+}
+
+.title h1 {
+    font-family: $font-title;
+}
+
+h2,
+h3 {
+    font-family: $font-black;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.fa-heart {
+    font-size: $heart-size;
+}
+
+button {
+    cursor: pointer;
+}

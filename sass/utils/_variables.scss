@@ -1,0 +1,24 @@
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+$primary-light: lighten($primary, 5%);
+$secondary-light: lighten($secondary, 5%);
+$color-arrow: #353535;
+$color-icon: #7e7e7e;
+$color-shadow: #c9c9c9;
+$tertiary-darken: darken($tertiary, 45%);
+$background-page: #f6f6f6;
+$background-page-darken: darken($background-page,2%);
+$background-btn: linear-gradient(0deg, $primary, $secondary);
+$background-btn-lighten: linear-gradient(0deg, $primary-light, $secondary-light);
+$background-location:#eaeaea;
+
+$shadow-size: 2px;
+$heart-size: 1.5em;
+
+$font-title: "ShrikhandRegular";
+$font-txt: "Roboto";
+$font-black: "RobotoBlack";
+
+
+

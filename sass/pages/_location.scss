@@ -1,0 +1,60 @@
+.location {
+    display: flex;
+    justify-content: space-evenly;
+
+    @include mobil-only {
+        display: block;
+    }
+
+    &__position {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        font-size: 2em;
+        font-family: $font-black;
+        justify-content: center;
+        background: $background-location;
+        box-shadow: 0 1px 1px 1px #d5d5d5 inset;
+        color: $color-arrow;
+
+        @include mobil-only {
+            width: 100%;
+            font-size: 1em;
+        }
+    }
+
+    &__search {
+        width: 50%;
+        background: $background-page;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 50px;
+
+        @include mobil-only {
+            width: 100%;
+        }
+
+        h1 {
+            font-family: $font-black;
+
+            @include mobil-only {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+    }
+
+    &__search p {
+        color: #4d4d4d;
+        padding-bottom: 20px;
+
+        @include mobil-only {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+.map-marker {
+    padding: 15px;
+}

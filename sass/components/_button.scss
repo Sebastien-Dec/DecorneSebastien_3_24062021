@@ -1,0 +1,14 @@
+.btn {
+    background: $background-btn;
+    font-family: $font-txt;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 20px 30px 20px 30px;
+    border-radius: 30px;
+    @include box-shadow();
+
+    &:hover {
+        @include btn-hover();
+    }
+}
