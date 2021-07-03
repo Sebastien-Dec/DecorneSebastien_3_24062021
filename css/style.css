@@ -13,6 +13,26 @@
   src: url("../fonts/RobotoBlack.ttf") format("truetype");
   src: url("../fonts/RobotoBlack.eot") format("embedded-opentype"), url("../fonts/RobotoBlack.woff2") format("woff2"), url("../fonts/RobotoBlack.woff") format("woff"), url("../fonts/RobotoBlack.svg#RobotoBlack") format("svg");
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes contain-spin {
+  0% {
+    background: #f6f6f6;
+  }
+  100% {
+    background: transparent;
+  }
+}
 .btn {
   background: linear-gradient(0deg, #9356DC, #FF79DA);
   font-family: "Roboto";
@@ -24,7 +44,6 @@
   box-shadow: 0 0 5px 2px #c9c9c9;
 }
 .btn:hover {
-  background: linear-gradient(0deg, #a16be0, #ff93e1);
   box-shadow: 0 0 5px 2px #969696;
   background: linear-gradient(0deg, #a16be0, #ff93e1);
 }
@@ -32,6 +51,7 @@
 body {
   font-family: "Roboto";
   margin: 0;
+  z-index: 1;
 }
 
 .title h1 {
@@ -70,6 +90,29 @@ button {
   padding: 10px;
   font-size: 1.2em;
   color: #353535;
+}
+
+.contain-spin {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f6f6f6;
+  opacity: 1;
+  animation: contain-spin 1s 3s ease-in-out forwards;
+  z-index: 9999;
+}
+
+.spin {
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  border: 3px solid #9356DC;
+  border-top: 3px solid #FF79DA;
+  border-radius: 100%;
+  animation: spin 3s ease-in-out forwards;
 }
 
 .location {
@@ -158,6 +201,13 @@ button {
   text-align: center;
   position: relative;
 }
+.tab__card {
+  box-shadow: 0 0 5px 2px #c9c9c9;
+  font-family: "RobotoBlack";
+}
+.tab__card:hover i {
+  color: #9356DC;
+}
 .tab ul {
   display: flex;
   justify-content: space-evenly;
@@ -206,6 +256,11 @@ button {
 .restaurant h2 {
   text-align: center;
   font-size: 2em;
+}
+@media screen and (max-width: 768px) {
+  .restaurant h2 {
+    text-align: left;
+  }
 }
 
 .rest-pres {
@@ -273,12 +328,14 @@ button {
 
 .heart-empty {
   z-index: 1;
+  position: relative;
 }
 
-.heart-full {
+.rest-tab__heart .heart-full,
+.title__heart .heart-full {
   z-index: -1;
   color: #9356DC;
-  visibility: hidden;
+  display: none;
 }
 
 .footer {
@@ -328,6 +385,9 @@ button {
 .title {
   position: relative;
 }
+.title h1 {
+  padding-left: 20px;
+}
 .title__img {
   object-fit: cover;
   width: 100%;
@@ -342,9 +402,21 @@ button {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .title__txt {
+    justify-content: space-between;
+  }
+}
 .title__heart {
   border: none;
   background: transparent;
+  padding-right: 20px;
+  margin-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  .title__heart {
+    margin-left: 0;
+  }
 }
 
 .menu {
@@ -353,6 +425,11 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    align-items: flex-start;
+  }
 }
 .menu__title {
   position: relative;
@@ -375,9 +452,13 @@ button {
 
 .dish {
   background: #fff;
-  width: 30%;
+  width: 350px;
   border-radius: 20px;
+  margin: 20px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 5px 2px #c9c9c9;
 }
 @media screen and (max-width: 991px) {
   .dish {
@@ -387,6 +468,7 @@ button {
 @media screen and (max-width: 768px) {
   .dish {
     width: 100%;
+    margin: 20px 0;
   }
 }
 .dish__title, .dish__object {
@@ -396,16 +478,37 @@ button {
 .dish__price {
   font-family: "RobotoBlack";
   position: absolute;
-  right: 30px;
+  right: 20px;
   top: 25px;
+}
+.dish__txt {
+  width: 205px;
 }
 
 .order {
   margin: 50px 0;
+  align-self: center;
 }
 .order__btn {
   border: none;
   padding: 15px 60px 15px 60px;
+}
+
+.check {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #99E2D0;
+  color: #fff;
+  width: 60px;
+  height: 100%;
+  border-radius: 0 20px 20px 0;
+  text-align: center;
+  display: none;
+}
+.check__check {
+  padding-top: 40%;
+  font-size: 1.2em;
 }
 
 /*# sourceMappingURL=style.css.map */

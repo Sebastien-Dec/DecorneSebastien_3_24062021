@@ -28,14 +28,17 @@
 
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/animations";
 @import "./components/button";
 @import "./base/body";
 @import "./layout/header";
+@import "./pages/spin";
 @import "./pages/location";
 @import "./pages/operation";
 @import "./pages/restaurant";
 @import "./layout/footer";
 @import "./layout/views";
+
 
 
 

@@ -9,6 +9,10 @@
     h2 {
         text-align: center;
         font-size: 2em;
+
+        @include mobil-only {
+            text-align: left;
+        }
     }
 }
 
@@ -76,16 +80,18 @@
         background: transparent;
         position: absolute;
         right: 20px;
-        bottom: 40px;
+        bottom: 40px;    
     }
 }
 
 .heart-empty {
     z-index: 1;
+    position:relative;    
 }
 
-.heart-full {
+.rest-tab__heart .heart-full, 
+.title__heart .heart-full {
     z-index: -1;
     color: $primary;
-    visibility: hidden;
+    display: none;
 }

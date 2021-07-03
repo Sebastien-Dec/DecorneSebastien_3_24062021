@@ -9,7 +9,6 @@
     @include box-shadow();
 
     &:hover {
-        background: $background-btn-lighten;
         @include btn-hover();
     }
 }

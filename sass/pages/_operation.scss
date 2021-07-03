@@ -24,6 +24,15 @@
         position: relative;
     }
 
+    &__card {
+        @include box-shadow();
+        font-family: $font-black;
+
+        &:hover i {
+            color: $primary;
+        }
+    }
+
     ul {
         display: flex;
         justify-content: space-evenly;
