@@ -11,26 +11,19 @@
 }
 
 .tab {
-    /*display: flex;
-    justify-content: space-evenly;*/
     display:inline;
 
     &__card {
         background: $background-page;
-        border: 1px solid transparent;
         border-radius: 10px;
-        box-shadow: 0 0 5px 2px $background-page-darken;
+        @include box-shadow($background-page-darken, $shadow-size);
+        font-family: $font-black;
         text-align: center;
         position: relative;
-    }
-
-    &__card {
-        @include box-shadow();
-        font-family: $font-black;
 
         &:hover i {
             color: $primary;
-        }
+        }  
     }
 
     ul {
