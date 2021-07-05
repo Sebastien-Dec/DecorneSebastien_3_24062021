@@ -80,18 +80,27 @@
         background: transparent;
         position: absolute;
         right: 20px;
-        bottom: 40px;    
+        bottom: 40px; 
+        
+        &:hover .heart-full{
+            display: block;
+            animation: heart-full 0.3s ease-out forwards;
+        }
+
+        &:hover .heart-empty {
+            display: none;
+        }
     }
 }
 
 .heart-empty {
-    z-index: 1;
-    position:relative;    
+    z-index: 1;  
 }
 
 .rest-tab__heart .heart-full, 
 .title__heart .heart-full {
     z-index: -1;
-    color: $primary;
+    color: #fff;
     display: none;
 }
+

@@ -23,3 +23,17 @@
         background: transparent;
     }
 }
+
+@keyframes heart-full {
+    0% {
+        color: $primary-gradient;
+    }
+
+    100% {
+        color: $primary;
+    }
+}
+
+@keyframes menu {
+    
+}

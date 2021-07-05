@@ -12,6 +12,7 @@ $background-page-darken: darken($background-page,2%);
 $background-btn: linear-gradient(0deg, $primary, $secondary);
 $background-btn-lighten: linear-gradient(0deg, $primary-light, $secondary-light);
 $background-location:#eaeaea;
+$primary-gradient: linear-gradient(0deg,$primary 20%, #fff);
 
 $shadow-size: 2px;
 $heart-size: 1.5em;
