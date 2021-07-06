@@ -26,14 +26,30 @@
 
 @keyframes heart-full {
     0% {
-        color: $primary-gradient;
+        opacity: 0;
     }
 
     100% {
-        color: $primary;
+        opacity: 1;
     }
 }
 
-@keyframes menu {
-    
+@keyframes heart-empty {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes menu-title {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }

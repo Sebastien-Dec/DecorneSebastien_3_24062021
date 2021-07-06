@@ -1,0 +1,21 @@
+.heart {
+    border: none;
+    background: transparent;
+}
+
+.heart-empty {
+    opacity: 1;
+}
+
+.rest-tab__heart .heart-full, 
+.title__heart .heart-full {
+    color: $primary;
+    opacity: 0;
+    position: absolute;
+    right: 5px;
+}
+
+.title__heart .heart-full{
+    right:43%;
+    bottom: 26px;
+}

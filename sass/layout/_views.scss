@@ -26,10 +26,18 @@
     }
 
     &__heart {
-        border: none;
-        background: transparent;
         padding-right: 20px;
         margin-left: 20px;
+        position: relative;
+
+        &:hover .heart-empty {
+            display: none;
+        }
+
+        &:hover .heart-full{
+            display: block;
+            animation: heart-full 1s ease-out forwards;
+        }  
 
         @include mobil-only {
             margin-left: 0;
@@ -43,8 +51,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: menu 1s ease-in-out;
-
+   
     @include mobil-only {
         align-items: flex-start;
     }
@@ -52,15 +59,14 @@
 
     &__title {
         position: relative;
+        transform: scale(1);
+        animation: menu-title 1s ease-out;
 
-        
         h2 {
             margin-top: 0;
             padding-bottom: 10px;
             font-family: $font-txt;
             text-transform : uppercase; 
-
-            
         }
     }
 

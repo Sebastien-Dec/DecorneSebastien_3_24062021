@@ -2,10 +2,6 @@
     background: $background-page;
     padding: 30px 20px;
 
-    a {
-        color: #000;
-    }
-
     h2 {
         text-align: center;
         font-size: 2em;
@@ -24,7 +20,6 @@
 
 .rest-tab {
     background: #fff;
-    border: 0px solid transparent;
     border-radius: 20px;
     position: relative;
     width: 40%;
@@ -76,31 +71,18 @@
     }
 
     &__heart {
-        border: none;
-        background: transparent;
         position: absolute;
         right: 20px;
         bottom: 40px; 
-        
-        &:hover .heart-full{
-            display: block;
-            animation: heart-full 0.3s ease-out forwards;
-        }
 
         &:hover .heart-empty {
-            display: none;
+            animation: heart-empty 1s ease-out forwards;
         }
+
+        &:hover .heart-full{
+            animation: heart-full 1s ease-out forwards;
+        }  
     }
 }
 
-.heart-empty {
-    z-index: 1;  
-}
-
-.rest-tab__heart .heart-full, 
-.title__heart .heart-full {
-    z-index: -1;
-    color: #fff;
-    display: none;
-}
 
