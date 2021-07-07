@@ -31,13 +31,12 @@
         position: relative;
 
         &:hover .heart-empty {
-            display: none;
+            animation: heart-empty $anim-dur ease-out forwards;
         }
 
         &:hover .heart-full{
-            display: block;
-            animation: heart-full 1s ease-out forwards;
-        }  
+            animation: heart-full $anim-dur ease-out forwards;
+        }
 
         @include mobil-only {
             margin-left: 0;
@@ -60,7 +59,12 @@
     &__title {
         position: relative;
         transform: scale(1);
-        animation: menu-title 1s ease-out;
+        animation: menu-title $anim-dur-title ease-out backwards;
+        @for $i from 2 through $nbr-menu-title {
+            &--#{$i} {
+                animation-delay: $anim-delay-title*$i;
+            }
+        }
 
         h2 {
             margin-top: 0;
@@ -87,13 +91,19 @@
     border-radius: 20px;
     margin: 20px;
     position: relative;
-    display: flex;
-    justify-content: space-between;
 
     @include box-shadow();
 
     @include tablet-only {
         width: 50%;
+    }
+
+    transform: scale(1);
+    animation: dish $anim-dur-dish ease-out backwards;
+    @for $i from 0 through $nbr-dish {
+        &--#{$i} {
+            animation-delay: $anim-delay-dish*$i;
+        }
     }
 
     @include mobil-only {
@@ -103,8 +113,10 @@
 
     &__title,
     &__object {
+        width: 205px;
         margin: 8px;
         padding-left: 5px;
+        text-overflow: ellipsis;
     }
 
     &__price {
@@ -112,10 +124,6 @@
         position: absolute;
         right: 20px;
         top: 25px;
-    }
-
-    &__txt {
-        width: 205px;
     }
 }
 

@@ -57,6 +57,14 @@
     transform: scale(1);
   }
 }
+@keyframes dish {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .btn {
   background: linear-gradient(0deg, #9356DC, #FF79DA);
   font-family: "Roboto";
@@ -99,6 +107,10 @@ ul {
 
 .fa-heart {
   font-size: 1.5em;
+}
+
+.fa-heart-square {
+  font-size: 2.8em;
 }
 
 button, li {
@@ -193,10 +205,9 @@ button, li {
   position: relative;
 }
 .title__heart:hover .heart-empty {
-  display: none;
+  animation: heart-empty 1s ease-out forwards;
 }
 .title__heart:hover .heart-full {
-  display: block;
   animation: heart-full 1s ease-out forwards;
 }
 @media screen and (max-width: 768px) {
@@ -220,7 +231,13 @@ button, li {
 .menu__title {
   position: relative;
   transform: scale(1);
-  animation: menu-title 1s ease-out;
+  animation: menu-title 1s ease-out backwards;
+}
+.menu__title--2 {
+  animation-delay: 0.8s;
+}
+.menu__title--3 {
+  animation-delay: 1.2s;
 }
 .menu__title h2 {
   margin-top: 0;
@@ -244,14 +261,47 @@ button, li {
   border-radius: 20px;
   margin: 20px;
   position: relative;
-  display: flex;
-  justify-content: space-between;
   box-shadow: 0 0 5px 2px #c9c9c9;
+  transform: scale(1);
+  animation: dish 2s ease-out backwards;
 }
 @media screen and (max-width: 991px) {
   .dish {
     width: 50%;
   }
+}
+.dish--0 {
+  animation-delay: 0s;
+}
+.dish--1 {
+  animation-delay: 0.24s;
+}
+.dish--2 {
+  animation-delay: 0.48s;
+}
+.dish--3 {
+  animation-delay: 0.72s;
+}
+.dish--4 {
+  animation-delay: 0.96s;
+}
+.dish--5 {
+  animation-delay: 1.2s;
+}
+.dish--6 {
+  animation-delay: 1.44s;
+}
+.dish--7 {
+  animation-delay: 1.68s;
+}
+.dish--8 {
+  animation-delay: 1.92s;
+}
+.dish--9 {
+  animation-delay: 2.16s;
+}
+.dish--10 {
+  animation-delay: 2.4s;
 }
 @media screen and (max-width: 768px) {
   .dish {
@@ -260,17 +310,16 @@ button, li {
   }
 }
 .dish__title, .dish__object {
+  width: 205px;
   margin: 8px;
   padding-left: 5px;
+  text-overflow: ellipsis;
 }
 .dish__price {
   font-family: "RobotoBlack";
   position: absolute;
   right: 20px;
   top: 25px;
-}
-.dish__txt {
-  width: 205px;
 }
 
 .order {
@@ -310,15 +359,21 @@ button, li {
 
 .rest-tab__heart .heart-full,
 .title__heart .heart-full {
-  color: #9356DC;
   opacity: 0;
+  background: linear-gradient(transparent 4%, #9356DC, #FF79DA, transparent);
   position: absolute;
-  right: 5px;
+  top: -8px;
+  right: 0;
+}
+
+.rest-tab__heart .heart-full {
+  color: #fff;
 }
 
 .title__heart .heart-full {
-  right: 43%;
-  bottom: 26px;
+  right: 30%;
+  top: 19px;
+  color: #f6f6f6;
 }
 
 .contain-spin {

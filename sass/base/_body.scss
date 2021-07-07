@@ -26,6 +26,10 @@ ul {
     font-size: $heart-size;
 }
 
+.fa-heart-square {
+    font-size: $heart-size+1.3em;
+}
+
 button, li {
     cursor: pointer;
 }

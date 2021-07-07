@@ -76,11 +76,11 @@
         bottom: 40px; 
 
         &:hover .heart-empty {
-            animation: heart-empty 1s ease-out forwards;
+            animation: heart-empty $anim-dur ease-out forwards;
         }
 
         &:hover .heart-full{
-            animation: heart-full 1s ease-out forwards;
+            animation: heart-full $anim-dur ease-out forwards;
         }  
     }
 }

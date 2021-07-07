@@ -9,13 +9,19 @@
 
 .rest-tab__heart .heart-full, 
 .title__heart .heart-full {
-    color: $primary;
     opacity: 0;
+    background: $heart-gradient;
     position: absolute;
-    right: 5px;
+    top: -8px;
+    right: 0;
+}
+
+.rest-tab__heart .heart-full {
+    color: #fff;
 }
 
 .title__heart .heart-full{
-    right:43%;
-    bottom: 26px;
+    right:30%;
+    top: 19px;
+    color: $background-page;
 }
