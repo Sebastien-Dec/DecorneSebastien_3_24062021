@@ -31,11 +31,11 @@
         position: relative;
 
         &:hover .heart-empty {
-            animation: heart-empty $anim-dur ease-out forwards;
+            animation: heart-empty $anim-dur-title ease-out forwards;
         }
 
         &:hover .heart-full{
-            animation: heart-full $anim-dur ease-out forwards;
+            animation: heart-full $anim-dur-title ease-out forwards;
         }
 
         @include mobil-only {
@@ -91,6 +91,9 @@
     border-radius: 20px;
     margin: 20px;
     position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 
     @include box-shadow();
 
@@ -111,12 +114,23 @@
         margin: 20px 0;
     }
 
+    &__txt {
+        z-index: 1;
+    }
+
+    &__txt:hover + .check {
+        animation: check-translate $anim-dur ease-out both;
+        & .check__check {
+            transform: rotate(2turn);
+            transition: transform $anim-dur ease-out;
+        }
+    }
+
     &__title,
     &__object {
         width: 205px;
         margin: 8px;
         padding-left: 5px;
-        text-overflow: ellipsis;
     }
 
     &__price {
@@ -147,10 +161,13 @@
     height: 100%;
     border-radius: 0 20px 20px 0;
     text-align: center;
-    display:none;
-    
+    transform-origin: 100% 50%;
+    transform: translateX(70px);
+    z-index: 1;
+        
     &__check {
-        padding-top: 40%;
+        margin-top: 40%;
         font-size: 1.2em;
+        transform: rotate(0turn);
     }
 }
