@@ -66,11 +66,20 @@
 
 @keyframes check-translate {
     0% {
-        transform: translateX(70px);
+        transform: translateX(191px);
     }
 
     100% {
-        transform: translateX(0px);
+        transform: translateX(131px);
     }
 }
 
+@keyframes price-translate {
+    0% {  
+        transform: translatex(0px);
+    }
+
+    100% {
+        transform: translateX(-60px);
+    }
+}

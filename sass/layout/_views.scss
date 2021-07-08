@@ -88,6 +88,7 @@
 .dish {
     background: #fff;
     width: 350px;
+    height: 65px;
     border-radius: 20px;
     margin: 20px;
     position: relative;
@@ -115,15 +116,14 @@
     }
 
     &__txt {
-        z-index: 1;
-    }
-
-    &__txt:hover + .check {
-        animation: check-translate $anim-dur ease-out both;
-        & .check__check {
-            transform: rotate(2turn);
-            transition: transform $anim-dur ease-out;
+        &:hover + .check {
+            animation: check-translate $anim-dur ease-out both;
         }
+
+            & .check__check {
+                transform: rotate(-2turn);
+                transition: transform $anim-dur ease-out;
+            }
     }
 
     &__title,
@@ -131,13 +131,21 @@
         width: 205px;
         margin: 8px;
         padding-left: 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        &:hover > .dish__price {
+            animation: price-translate $anim-dur ease-out both;
+        }
     }
 
     &__price {
         font-family: $font-black;
-        position: absolute;
-        right: 20px;
-        top: 25px;
+        position: relative;
+        left: 300px;
+        bottom: 35px;
+        transform: translateX(0px);
     }
 }
 
@@ -152,9 +160,9 @@
 }
 
 .check {
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: relative;
+    left: 160px;
+    bottom: 109px;
     background: $tertiary;
     color: #fff;
     width: 60px;
@@ -162,8 +170,7 @@
     border-radius: 0 20px 20px 0;
     text-align: center;
     transform-origin: 100% 50%;
-    transform: translateX(70px);
-    z-index: 1;
+    transform: translateX(191px);
         
     &__check {
         margin-top: 40%;
