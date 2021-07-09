@@ -252,8 +252,14 @@ button, li {
 .menu__title--2 {
   animation-delay: 0.8s;
 }
+.menu__title--2, .menu__title--3 {
+  margin-top: 20px;
+}
 .menu__title--3 {
   animation-delay: 1.2s;
+}
+.menu__title--2, .menu__title--3 {
+  margin-top: 20px;
 }
 .menu__title h2 {
   margin-top: 0;
@@ -274,9 +280,8 @@ button, li {
 .dish {
   background: #fff;
   width: 350px;
-  height: 70px;
   border-radius: 20px;
-  margin: 20px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -339,24 +344,38 @@ button, li {
 .dish:hover .dish__price {
   animation: translate-price 0.5s ease-out both;
 }
-.dish__txt {
-  width: 290px;
-  padding-left: 15px;
+.dish:hover .dish__txt {
+  width: 225px;
+}
+.dish:hover .dish__title {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
+.dish:hover .dish__object {
+  width: 225px;
+}
+.dish__txt {
+  padding-left: 15px;
+}
 .dish__title {
-  margin: 10px 0 0 0;
+  margin: 10px 0;
+  font-size: 1.1em;
+  width: 260px;
 }
 .dish__object {
-  margin: 5px 0 0 0;
+  margin: 10px 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1em;
+  width: 290px;
 }
 .dish__price {
   font-family: "RobotoBlack";
-  position: relative;
+  position: absolute;
   top: 25px;
-  left: 35px;
+  right: 15px;
 }
 
 .order {
@@ -373,14 +392,13 @@ button, li {
   background: #99E2D0;
   color: #fff;
   width: 60px;
-  height: 100%;
   border-radius: 0 20px 20px 0;
   text-align: center;
   transform-origin: 100% 50%;
   transform: translateX(60px);
 }
 .check__check {
-  margin-top: 50%;
+  margin-top: 35%;
   font-size: 1.2em;
   transform: rotate(0turn);
 }

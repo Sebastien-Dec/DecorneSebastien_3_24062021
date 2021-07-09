@@ -63,6 +63,11 @@
       &--#{$i} {
         animation-delay: $anim-delay-title * $i;
       }
+
+      &--2,
+      &--3 {
+          margin-top: 20px;
+      }
     }
 
     h2 {
@@ -87,9 +92,8 @@
 .dish {
   background: #fff;
   width: 350px;
-  height: 70px;
   border-radius: 20px;
-  margin: 20px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -127,27 +131,44 @@
       animation: translate-price $anim-dur ease-out both;
   }
 
-  &__txt {
-    width: 290px;
-    padding-left: 15px;
+  &:hover .dish__txt {
+      width: 225px;
+  }
+
+  &:hover .dish__title {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
   }
 
+  &:hover .dish__object {
+      width: 225px;
+  }
+
+  &__txt {
+    padding-left: 15px;
+  }
+
   &__title {
-    margin: 10px 0 0 0;
+    margin: 10px 0;
+    font-size: 1.1em;
+    width: 260px;
   }
 
   &__object {
-    margin: 5px 0 0 0;
+    margin: 10px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1em;
+    width: 290px;
   }
 
   &__price {
     font-family: $font-black;
-    position: relative;
+    position: absolute;
     top: 25px;
-    left: 35px;
+    right: 15px;
   }
 }
 
@@ -166,14 +187,13 @@
   background: $tertiary;
   color: #fff;
   width: 60px;
-  height: 100%;
   border-radius: 0 20px 20px 0;
   text-align: center;
   transform-origin: 100% 50%;
   transform: translateX(60px);
 
   &__check {
-    margin-top: 50%;
+    margin-top: 35%;
     font-size: 1.2em;
     transform: rotate(0turn);
   }
