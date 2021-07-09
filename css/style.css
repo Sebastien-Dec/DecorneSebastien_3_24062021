@@ -67,13 +67,13 @@
 }
 @keyframes check-translate {
   0% {
-    transform: translateX(191px);
+    transform: translateX(60px);
   }
   100% {
-    transform: translateX(131px);
+    transform: translateX(0);
   }
 }
-@keyframes price-translate {
+@keyframes translate-price {
   0% {
     transform: translatex(0px);
   }
@@ -274,13 +274,13 @@ button, li {
 .dish {
   background: #fff;
   width: 350px;
-  height: 65px;
+  height: 70px;
   border-radius: 20px;
   margin: 20px;
+  display: flex;
+  justify-content: space-between;
   position: relative;
-  text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
   box-shadow: 0 0 5px 2px #c9c9c9;
   transform: scale(1);
   animation: dish 2s ease-out backwards;
@@ -329,30 +329,34 @@ button, li {
     margin: 20px 0;
   }
 }
-.dish__txt:hover + .check {
+.dish:hover .check {
   animation: check-translate 0.5s ease-out both;
 }
-.dish__txt .check__check {
+.dish:hover .check__check {
   transform: rotate(-2turn);
   transition: transform 0.5s ease-out;
 }
-.dish__title, .dish__object {
-  width: 205px;
-  margin: 8px;
-  padding-left: 5px;
+.dish:hover .dish__price {
+  animation: translate-price 0.5s ease-out both;
+}
+.dish__txt {
+  width: 290px;
+  padding-left: 15px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-.dish__title:hover > .dish__price, .dish__object:hover > .dish__price {
-  animation: price-translate 0.5s ease-out both;
+.dish__title {
+  margin: 10px 0 0 0;
+}
+.dish__object {
+  margin: 5px 0 0 0;
 }
 .dish__price {
   font-family: "RobotoBlack";
   position: relative;
-  left: 300px;
-  bottom: 35px;
-  transform: translateX(0px);
+  top: 25px;
+  left: 35px;
 }
 
 .order {
@@ -366,8 +370,6 @@ button, li {
 
 .check {
   position: relative;
-  left: 160px;
-  bottom: 109px;
   background: #99E2D0;
   color: #fff;
   width: 60px;
@@ -375,10 +377,10 @@ button, li {
   border-radius: 0 20px 20px 0;
   text-align: center;
   transform-origin: 100% 50%;
-  transform: translateX(191px);
+  transform: translateX(60px);
 }
 .check__check {
-  margin-top: 40%;
+  margin-top: 50%;
   font-size: 1.2em;
   transform: rotate(0turn);
 }
