@@ -12,16 +12,20 @@
     opacity: 0;
     background: $heart-gradient;
     position: absolute;
-    top: -8px;
-    right: 0;
+    top: 0;
+    right: 6px;
 }
 
 .rest-tab__heart .heart-full {
-    color: #fff;
+    background: -webkit-gradient($primary, $secondary);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .title__heart .heart-full{
-    right:30%;
-    top: 19px;
-    color: $background-page;
+    right:43%;
+    top: 28px;
+    background: -webkit-gradient($primary, $secondary);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }

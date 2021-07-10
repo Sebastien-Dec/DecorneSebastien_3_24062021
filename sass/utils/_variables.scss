@@ -13,7 +13,7 @@ $background-btn: linear-gradient(0deg, $primary, $secondary);
 $background-btn-lighten: linear-gradient(0deg, $primary-light, $secondary-light);
 $background-location:#eaeaea;
 $primary-gradient: linear-gradient(0deg, $primary 50%, #fff);
-$heart-gradient: linear-gradient(transparent 4%, $primary, $secondary, transparent);
+$heart-gradient: linear-gradient(180deg, $primary, $secondary);
 
 $shadow-size: 2px;
 $heart-size: 1.5em;

@@ -429,24 +429,20 @@ button, li {
 .rest-tab__heart .heart-full,
 .title__heart .heart-full {
   opacity: 0;
-  background: linear-gradient(180deg, #9356DC, #FF79DA);
+  background: linear-gradient(transparent 4%, #9356DC, #FF79DA, transparent);
   position: absolute;
-  top: 0;
-  right: 6px;
+  top: -8px;
+  right: 0;
 }
 
 .rest-tab__heart .heart-full {
-  background: -webkit-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #fff;
 }
 
 .title__heart .heart-full {
-  right: 43%;
-  top: 28px;
-  background: -webkit-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  right: 30%;
+  top: 19px;
+  color: #f6f6f6;
 }
 
 .contain-spin {
