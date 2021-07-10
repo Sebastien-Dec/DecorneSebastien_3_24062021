@@ -204,7 +204,7 @@ rest-tab__heart {
 .title__img {
   object-fit: fill;
   width: 100%;
-  height: 400px;
+  height: 600px;
 }
 @media screen and (max-width: 768px) {
   .title__img {
@@ -635,7 +635,7 @@ rest-tab__heart {
 }
 .rest-tab__img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
   position: relative;
