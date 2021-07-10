@@ -19,8 +19,12 @@
         background: $background-page;
     }
 
+    95% {
+        background: transparent;        
+    }
+
     100% {
-        background: transparent;
+        transform: translateX(100%);
     }
 }
 

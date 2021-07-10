@@ -6,9 +6,13 @@
   }
 
   &__img {
-    object-fit: cover;
+    object-fit: fill;
     width: 100%;
     height: 400px;
+
+    @include mobil-only {
+        height: 238px;
+    }
   }
 
   &__txt {
@@ -53,6 +57,7 @@
 
   @include mobil-only {
     align-items: flex-start;
+    padding: 10px;
   }
 
   &__title {
@@ -75,6 +80,10 @@
       padding-bottom: 10px;
       font-family: $font-txt;
       text-transform: uppercase;
+
+      @include mobil-only {
+          padding-bottom: 0;
+      }
     }
   }
 
@@ -85,7 +94,7 @@
     border: none;
     position: absolute;
     left: 0;
-    top: 30px;
+    top: 25px;
   }
 }
 
@@ -115,7 +124,7 @@
 
   @include mobil-only {
     width: 100%;
-    margin: 20px 0;
+    margin: 10px 0 20px 0;
   }
 
   &:hover .check {

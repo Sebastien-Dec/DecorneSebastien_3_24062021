@@ -6,6 +6,7 @@
     opacity: 1;
     animation: contain-spin 1s 2.4s ease-in-out forwards;
     z-index: 9999;
+    transform: translateX(0%);
 }
 
 .spin {
