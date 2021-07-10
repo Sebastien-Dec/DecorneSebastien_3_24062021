@@ -1,31 +1,31 @@
 .heart {
-    border: none;
-    background: transparent;
+  border: none;
+  background: transparent;
 }
 
 .heart-empty {
-    opacity: 1;
+  opacity: 1;
 }
 
-.rest-tab__heart .heart-full, 
+.rest-tab__heart .heart-full,
 .title__heart .heart-full {
-    opacity: 0;
-    background: $heart-gradient;
-    position: absolute;
-    top: 0;
-    right: 6px;
+  opacity: 0;
+  background: $heart-gradient;
+  position: absolute;
+  top: 0;
+  right: 6px;
 }
 
 .rest-tab__heart .heart-full {
-    background: -webkit-gradient($primary, $secondary);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: -webkit-gradient($primary, $secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.title__heart .heart-full{
-    right:43%;
-    top: 28px;
-    background: -webkit-gradient($primary, $secondary);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+.title__heart .heart-full {
+  right: 43%;
+  top: 28px;
+  background: -webkit-gradient($primary, $secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
