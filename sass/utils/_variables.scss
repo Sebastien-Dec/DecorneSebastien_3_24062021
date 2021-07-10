@@ -12,6 +12,8 @@ $background-page-darken: darken($background-page,2%);
 $background-btn: linear-gradient(0deg, $primary, $secondary);
 $background-btn-lighten: linear-gradient(0deg, $primary-light, $secondary-light);
 $background-location:#eaeaea;
+$primary-gradient: linear-gradient(0deg, $primary 50%, #fff);
+$heart-gradient: linear-gradient(180deg, $primary, $secondary);
 
 $shadow-size: 2px;
 $heart-size: 1.5em;
@@ -20,5 +22,12 @@ $font-title: "ShrikhandRegular";
 $font-txt: "Roboto";
 $font-black: "RobotoBlack";
 
+$nbr-menu-title: 3;
+$nbr-dish: 10;
+$anim-dur: 0.5s;
+$anim-dur-title: 1s;
+$anim-dur-dish: 2s;
+$anim-delay-title: $anim-dur-title/$nbr-menu-title*1.2;
+$anim-delay-dish: $anim-dur-dish/$nbr-dish*1.2;
 
 

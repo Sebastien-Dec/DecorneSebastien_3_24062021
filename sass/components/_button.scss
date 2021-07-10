@@ -7,6 +7,7 @@
     padding: 20px 30px 20px 30px;
     border-radius: 30px;
     @include box-shadow();
+    transition: all 0.3s ease-out;
 
     &:hover {
         @include btn-hover();

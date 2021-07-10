@@ -19,7 +19,71 @@
         background: $background-page;
     }
 
+    95% {
+        background: transparent;        
+    }
+
     100% {
-        background: transparent;
+        transform: translateX(100%);
+    }
+}
+
+@keyframes heart-full {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes heart-empty {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes menu-title {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes dish {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes check-translate {
+    0% {
+        transform: translateX(60px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes translate-price {
+    0% {  
+        transform: translatex(0px);
+    }
+
+    100% {
+        transform: translateX(-60px);
     }
 }
