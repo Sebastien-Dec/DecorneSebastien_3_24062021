@@ -30,6 +30,8 @@ ul {
     font-size: $heart-size+1.3em;
 }
 
-button, li {
+button, 
+li,
+rest-tab__heart {
     cursor: pointer;
 }
