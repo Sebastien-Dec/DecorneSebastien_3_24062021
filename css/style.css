@@ -472,7 +472,7 @@ rest-tab__heart {
   border: 3px solid #9356DC;
   border-top: 3px solid #FF79DA;
   border-radius: 100%;
-  animation: spin 0.8s ease-out forwards 3;
+  animation: spin 0.8s cubic-bezier(0.3, 0.65, 0.5, 0.81) forwards 3;
 }
 
 .location {
