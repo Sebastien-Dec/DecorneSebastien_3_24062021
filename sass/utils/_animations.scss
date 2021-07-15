@@ -3,13 +3,15 @@
         transform: rotate(0deg);
     }
 
+<<<<<<< HEAD
     95% {
         transform: rotate(360deg);
     }
 
+=======
+>>>>>>> dev
     100% {
-        opacity: 0;
-        
+        transform: rotate(360deg);
     }
 }
 
@@ -20,12 +22,17 @@
     }
 
     100% {
+<<<<<<< HEAD
         background: transparent;        
     }
 
    /*100% {
         display: none;
     }*/
+=======
+        transform: translateX(100%);
+    }
+>>>>>>> dev
 }
 
 @keyframes heart-full {
@@ -48,42 +55,14 @@
     }
 }
 
-@keyframes menu-title {
-    0% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
 @keyframes dish {
     0% {
-        transform: scale(0);
+        transform: translateY(-30px);
+        opacity: 0;
     }
 
     100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes check-translate {
-    0% {
-        transform: translateX(60px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes translate-price {
-    0% {  
-        transform: translatex(0px);
-    }
-
-    100% {
-        transform: translateX(-60px);
+        transform: translateY(0);
+        opacity: 1;
     }
 }

@@ -33,13 +33,13 @@
     
     &__img {
         width: 100%;
-        height: 250px;
+        height: 400px;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
         position: relative;
 
         @include tablet-only {
-            height: 175px;
+            height: 300px;
         }
     }
 
@@ -76,11 +76,11 @@
         bottom: 30px; 
 
         &:hover .heart-empty {
-            animation: heart-empty $anim-dur-title ease-out forwards;
+            animation: heart-empty $anim-dur-heart ease-out forwards;
         }
 
         &:hover .heart-full{
-            animation: heart-full $anim-dur-title ease-out forwards;
+            animation: heart-full $anim-dur-heart ease-out forwards;
         }  
     }
 }
