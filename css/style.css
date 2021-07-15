@@ -262,7 +262,7 @@ rest-tab__heart {
   opacity: 1;
   box-shadow: 0 0 5px 2px #c9c9c9;
   transform: translateY(0px);
-  animation: dish 1s ease-out backwards;
+  animation: dish 2s ease-out backwards;
 }
 @media screen and (max-width: 991px) {
   .dish {
@@ -273,34 +273,34 @@ rest-tab__heart {
   animation-delay: 0s;
 }
 .dish--1 {
-  animation-delay: 0.12s;
-}
-.dish--2 {
   animation-delay: 0.24s;
 }
-.dish--3 {
-  animation-delay: 0.36s;
-}
-.dish--4 {
+.dish--2 {
   animation-delay: 0.48s;
 }
-.dish--5 {
-  animation-delay: 0.6s;
-}
-.dish--6 {
+.dish--3 {
   animation-delay: 0.72s;
 }
-.dish--7 {
-  animation-delay: 0.84s;
-}
-.dish--8 {
+.dish--4 {
   animation-delay: 0.96s;
 }
+.dish--5 {
+  animation-delay: 1.2s;
+}
+.dish--6 {
+  animation-delay: 1.44s;
+}
+.dish--7 {
+  animation-delay: 1.68s;
+}
+.dish--8 {
+  animation-delay: 1.92s;
+}
 .dish--9 {
-  animation-delay: 1.08s;
+  animation-delay: 2.16s;
 }
 .dish--10 {
-  animation-delay: 1.2s;
+  animation-delay: 2.4s;
 }
 @media screen and (max-width: 768px) {
   .dish {
@@ -424,16 +424,16 @@ rest-tab__heart {
   justify-content: center;
   align-items: center;
   background: #f6f6f6;
-  animation: contain-spin 2s 6s ease-in-out both;
+  animation: contain-spin 2s 2.4s ease-in-out both;
   transform: translateX(0%);
   z-index: 2;
 }
 
 .spin {
-  width: 120px;
-  height: 120px;
-  border: 16px solid #9356DC;
-  border-top: 16px solid #FF79DA;
+  width: 100px;
+  height: 100px;
+  border: 10px solid #9356DC;
+  border-top: 10px solid #FF79DA;
   border-radius: 100%;
   animation: spin 0.8s linear infinite;
 }
@@ -532,7 +532,6 @@ rest-tab__heart {
 .tab ul {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
   .tab ul {
@@ -544,6 +543,7 @@ rest-tab__heart {
   margin: 30px;
   padding: 30px;
   font-size: 1.2em;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
   .tab ul li {
@@ -610,7 +610,7 @@ rest-tab__heart {
 }
 @media screen and (max-width: 991px) {
   .rest-tab__img {
-    height: 200px;
+    height: 300px;
   }
 }
 .rest-tab__new {

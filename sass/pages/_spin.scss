@@ -7,16 +7,16 @@
     justify-content: center;
     align-items: center;
     background: $background-page;
-    animation: contain-spin 2s 6s ease-in-out both;
+    animation: contain-spin 2s 2.4s ease-in-out both;
     transform: translateX(0%);
     z-index: 2;
 }
 
 .spin {
-    width: 120px;
-    height: 120px;
-    border: 16px solid $primary;
-    border-top: 16px solid $secondary;
+    width: 100px;
+    height: 100px;
+    border: 10px solid $primary;
+    border-top: 10px solid $secondary;
     border-radius: 100%;
     animation: spin 0.8s linear infinite;
 }

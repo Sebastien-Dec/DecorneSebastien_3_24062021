@@ -24,7 +24,7 @@
         &:hover {
             background: lighten($color: $primary, $amount: 35%);
         }
-        
+
         &:hover i {
             color: $primary;
         }  
@@ -33,7 +33,7 @@
     ul {
         display: flex;
         justify-content: space-evenly;
-        flex-wrap: wrap;
+        
 
         @include mobil-only {
             display: block;
@@ -44,6 +44,7 @@
         margin:30px;
         padding: 30px;
         font-size: 1.2em;
+        flex-wrap: wrap;
 
         @include mobil-only {
             margin-left: 0;

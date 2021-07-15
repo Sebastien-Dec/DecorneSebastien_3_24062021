@@ -39,7 +39,7 @@
         position: relative;
 
         @include tablet-only {
-            height: 200px;
+            height: 300px;
         }
     }
 
@@ -76,11 +76,11 @@
         bottom: 30px; 
 
         &:hover .heart-empty {
-            animation: heart-empty $anim-dur-title ease-out forwards;
+            animation: heart-empty $anim-dur-heart ease-out forwards;
         }
 
         &:hover .heart-full{
-            animation: heart-full $anim-dur-title ease-out forwards;
+            animation: heart-full $anim-dur-heart ease-out forwards;
         }  
     }
 }
