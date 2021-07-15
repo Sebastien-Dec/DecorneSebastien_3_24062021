@@ -3,24 +3,14 @@
         transform: rotate(0deg);
     }
 
-    90% {
-        transform: rotate(360deg);
-        opacity: 1;
-    }
-
     100% {
-        opacity: 0;
-        
+        transform: rotate(360deg);
     }
 }
 
 @keyframes contain-spin {
     0% {
         background: $background-page;
-    }
-
-    95% {
-        background: transparent;        
     }
 
     100% {
