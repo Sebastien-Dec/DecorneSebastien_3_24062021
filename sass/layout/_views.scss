@@ -62,20 +62,9 @@
 
   &__title {
     position: relative;
-    transform: scale(1);
-    animation: menu-title $anim-dur-title ease-out backwards;
-    @for $i from 2 through $nbr-menu-title {
-      &--#{$i} {
-        animation-delay: $anim-delay-title * $i;
-      }
-
-      &--2,
-      &--3 {
-          margin-top: 20px;
-      }
     }
 
-    h2 {
+    & h2 {
       margin-top: 0;
       padding-bottom: 10px;
       font-family: $font-txt;
@@ -85,7 +74,6 @@
           padding-bottom: 0;
       }
     }
-  }
 
   hr {
     background: $tertiary;
@@ -107,6 +95,7 @@
   justify-content: space-between;
   position: relative;
   overflow: hidden;
+  opacity: 1;
   
   @include box-shadow();
 
@@ -114,7 +103,7 @@
     width: 50%;
   }
 
-  transform: scale(1);
+  transform: translateY(0px);
   animation: dish $anim-dur-dish ease-out backwards;
   @for $i from 0 through $nbr-dish {
     &--#{$i} {
@@ -128,16 +117,18 @@
   }
 
   &:hover .check {
-    animation: check-translate $anim-dur ease-out both;
+    transform: translateX(0);
+    transition: transform $anim-dur ease-out both;
   }
-
+  
   &:hover .check__check {
     transform: rotate(-2turn);
     transition: transform $anim-dur ease-out;
   }
 
   &:hover .dish__price {
-      animation: translate-price $anim-dur ease-out both;
+      transform: translateX(-60px);
+      transition: transform $anim-dur ease-out both;
   }
 
   &:hover .dish__txt {
@@ -178,6 +169,8 @@
     position: absolute;
     top: 25px;
     right: 15px;
+    transform: translateX(0);
+    transition: transform $anim-dur;
   }
 }
 
@@ -200,10 +193,12 @@
   text-align: center;
   transform-origin: 100% 50%;
   transform: translateX(60px);
+  transition: transform $anim-dur;
 
   &__check {
-    margin-top: 35%;
+    margin-top: 45%;
     font-size: 1.2em;
     transform: rotate(0turn);
+    transition: transform $anim-dur;
   }
 }

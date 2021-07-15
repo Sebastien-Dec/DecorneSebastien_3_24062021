@@ -38,42 +38,14 @@
     }
 }
 
-@keyframes menu-title {
-    0% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
 @keyframes dish {
     0% {
-        transform: scale(0);
+        transform: translateY(-30px);
+        opacity: 0;
     }
 
     100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes check-translate {
-    0% {
-        transform: translateX(60px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes translate-price {
-    0% {  
-        transform: translatex(0px);
-    }
-
-    100% {
-        transform: translateX(-60px);
+        transform: translateY(0);
+        opacity: 1;
     }
 }
