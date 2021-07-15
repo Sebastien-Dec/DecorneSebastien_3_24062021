@@ -21,6 +21,10 @@
         text-align: center;
         position: relative;
 
+        &:hover {
+            background: lighten($color: $primary, $amount: 35%);
+        }
+        
         &:hover i {
             color: $primary;
         }  
