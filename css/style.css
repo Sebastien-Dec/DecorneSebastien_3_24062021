@@ -557,6 +557,7 @@ rest-tab__heart {
 .tab ul {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
   .tab ul {
