@@ -24,7 +24,6 @@
 @keyframes contain-spin {
   0% {
     background: #f6f6f6;
-    display: block;
   }
   100% {
     transform: translateX(100%);
