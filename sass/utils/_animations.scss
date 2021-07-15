@@ -3,9 +3,8 @@
         transform: rotate(0deg);
     }
 
-    90% {
+    95% {
         transform: rotate(360deg);
-        opacity: 1;
     }
 
     100% {
@@ -17,15 +16,16 @@
 @keyframes contain-spin {
     0% {
         background: $background-page;
-    }
-
-    95% {
-        background: transparent;        
+        display: block;
     }
 
     100% {
-        transform: translateX(100%);
+        background: transparent;        
     }
+
+   /*100% {
+        display: none;
+    }*/
 }
 
 @keyframes heart-full {

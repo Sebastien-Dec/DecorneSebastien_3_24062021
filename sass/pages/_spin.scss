@@ -4,9 +4,9 @@
     height: 100%;
     background: $background-page;
     opacity: 1;
-    animation: contain-spin 1s 2.4s ease-in-out forwards;
+    animation: contain-spin 1s 3s ease-in-out forwards;
     z-index: 9999;
-    transform: translateX(0%);
+    /*display: none;*/
 }
 
 .spin {
@@ -19,5 +19,5 @@
     border: 3px solid $primary;
     border-top: 3px solid $secondary;
     border-radius: 100%;
-    animation: spin 0.8s cubic-bezier(.3,.65,.5,.81) forwards 3;
+    animation: spin 1s cubic-bezier(.3,.65,.5,.81) forwards 3;
 }
