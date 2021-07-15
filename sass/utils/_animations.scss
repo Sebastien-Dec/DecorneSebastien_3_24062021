@@ -3,13 +3,6 @@
         transform: rotate(0deg);
     }
 
-<<<<<<< HEAD
-    95% {
-        transform: rotate(360deg);
-    }
-
-=======
->>>>>>> dev
     100% {
         transform: rotate(360deg);
     }
@@ -22,17 +15,8 @@
     }
 
     100% {
-<<<<<<< HEAD
-        background: transparent;        
-    }
-
-   /*100% {
-        display: none;
-    }*/
-=======
         transform: translateX(100%);
     }
->>>>>>> dev
 }
 
 @keyframes heart-full {
