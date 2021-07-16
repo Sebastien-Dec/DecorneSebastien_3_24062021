@@ -47,7 +47,11 @@
 }
 @keyframes dish {
   0% {
+<<<<<<< Updated upstream
     transform: translateY(30px);
+=======
+    transform: translateY(-30px);
+>>>>>>> Stashed changes
     opacity: 0;
   }
   100% {
@@ -61,8 +65,12 @@
   font-weight: bold;
   color: #fff;
   font-size: 1.1em;
+<<<<<<< Updated upstream
   border: none;
   padding: 20px 80px 20px 80px;
+=======
+  padding: 20px 30px 20px 30px;
+>>>>>>> Stashed changes
   border-radius: 30px;
   box-shadow: 0 0 5px 2px #c9c9c9;
   transition: all 0.3s ease-out;
@@ -203,10 +211,17 @@ rest-tab__heart {
   position: relative;
 }
 .title__heart:hover .heart-empty {
+<<<<<<< Updated upstream
   animation: heart-empty 1.5s ease-out forwards;
 }
 .title__heart:hover .heart-full {
   animation: heart-full 1.5s ease-out forwards;
+=======
+  animation: heart-empty 3s ease-out forwards;
+}
+.title__heart:hover .heart-full {
+  animation: heart-full 3s ease-out forwards;
+>>>>>>> Stashed changes
 }
 @media screen and (max-width: 768px) {
   .title__heart {
@@ -361,6 +376,13 @@ rest-tab__heart {
   margin: 50px 0;
   align-self: center;
 }
+<<<<<<< Updated upstream
+=======
+.order__btn {
+  border: none;
+  padding: 20px 80px 20px 80px;
+}
+>>>>>>> Stashed changes
 
 .check {
   position: relative;
@@ -639,10 +661,17 @@ rest-tab__heart {
   bottom: 30px;
 }
 .rest-tab__heart:hover .heart-empty {
+<<<<<<< Updated upstream
   animation: heart-empty 1.5s ease-out forwards;
 }
 .rest-tab__heart:hover .heart-full {
   animation: heart-full 1.5s ease-out forwards;
+=======
+  animation: heart-empty 3s ease-out forwards;
+}
+.rest-tab__heart:hover .heart-full {
+  animation: heart-full 3s ease-out forwards;
+>>>>>>> Stashed changes
 }
 
 /*# sourceMappingURL=style.css.map */
