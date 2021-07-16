@@ -362,7 +362,11 @@ rest-tab__heart {
 }
 .order__btn {
   border: none;
+<<<<<<< Updated upstream
   padding: 15px 60px 15px 60px;
+=======
+  padding: 20px 80px 20px 80px;
+>>>>>>> Stashed changes
 }
 
 .check {
