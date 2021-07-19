@@ -5,12 +5,16 @@
     color: #fff;
     font-size: 1.1em;
     border: none;
-    padding: 20px 80px 20px 80px;
+    padding: 20px 80px;
     border-radius: 30px;
     @include box-shadow();
     transition: all 0.3s ease-out;
 
     &:hover {
         @include btn-hover();
+    }
+
+    @include mobil-only {
+        padding: 20px 60px;
     }
 }

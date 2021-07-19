@@ -65,7 +65,7 @@
     }
 
     & h2 {
-      margin-top: 0;
+      margin-top: 20px;
       padding-bottom: 10px;
       font-family: $font-txt;
       text-transform: uppercase;
@@ -82,7 +82,7 @@
     border: none;
     position: absolute;
     left: 0;
-    top: 25px;
+    top: 45px;
   }
 }
 
@@ -118,17 +118,17 @@
 
   &:hover .check {
     transform: translateX(0);
-    transition: transform $anim-dur ease-out both;
+    transition: transform $anim-dur ease-out;
   }
   
   &:hover .check__check {
-    transform: rotate(-2turn);
+    transform: rotate(2turn);
     transition: transform $anim-dur ease-out;
   }
 
   &:hover .dish__price {
       transform: translateX(-60px);
-      transition: transform $anim-dur ease-out both;
+      transition: transform $anim-dur ease-out;
   }
 
   &:hover .dish__txt {
@@ -136,7 +136,6 @@
   }
 
   &:hover .dish__title {
-    text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
   }
@@ -152,7 +151,8 @@
   &__title {
     margin: 10px 0;
     font-size: 1.1em;
-    width: 260px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   &__object {
@@ -161,7 +161,6 @@
     overflow: hidden;
     white-space: nowrap;
     font-size: 1em;
-    width: 290px;
   }
 
   &__price {
@@ -177,6 +176,14 @@
 .order {
   margin: 50px 0;
   align-self: center;
+
+  &__btn {
+    padding: 20px 80px 20px 80px;
+
+    @include mobil-only {
+      padding: 20px 80px;
+    }
+  }
 }
 
 .check {

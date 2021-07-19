@@ -11,12 +11,14 @@
 }
 
 .tab {
-    display:inline;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
     &__card {
         background: $background-page;
         border-radius: 10px;
-        @include box-shadow($background-page-darken, $shadow-size);
+        @include box-shadow($background-page-darken, 0);
         font-family: $font-black;
         text-align: center;
         position: relative;
@@ -34,6 +36,9 @@
         display: flex;
         justify-content: space-evenly;
         
+        @include tablet-only {
+            flex-wrap: wrap;
+        }
 
         @include mobil-only {
             display: block;
@@ -44,7 +49,6 @@
         margin:30px;
         padding: 30px;
         font-size: 1.2em;
-        flex-wrap: wrap;
 
         @include mobil-only {
             margin-left: 0;
@@ -65,8 +69,5 @@
     &__icon {
         color: $color-icon;
         margin: 0 20px 0 15px;
-        /*&--active {
-            color: $primary;
-        }*/
     }
 }
