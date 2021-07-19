@@ -13,15 +13,16 @@ $breakpoints: (
 @mixin tablet-only {
     @media screen and (max-width: map-get($breakpoints, tablet))
     {
-        @content
+        @content;
     }
 }
 
 @mixin box-shadow ($color: $color-shadow,$shadow-size: $shadow-size){
-    box-shadow: 0 0 $shadow-size+3px $shadow-size $color;
+    box-shadow: 0 0 $shadow-size+3px $shadow-size $color-shadow;
 }
 
 @mixin btn-hover ($color: darken($color-shadow, 20%), $shadow-size: $shadow-size){
     @include box-shadow($color, $shadow-size);
     background: $background-btn-lighten;
 }
+
