@@ -21,6 +21,10 @@ $breakpoints: (
     box-shadow: 0 0 $shadow-size+3px $shadow-size $color-shadow;
 }
 
+@mixin box-shadow-tab ($color: $color-shadow,$shadow-size: $shadow-size){
+    box-shadow: 0 0 $shadow-size 0 $color-shadow;
+}
+
 @mixin btn-hover ($color: darken($color-shadow, 20%), $shadow-size: $shadow-size){
     @include box-shadow($color, $shadow-size);
     background: $background-btn-lighten;

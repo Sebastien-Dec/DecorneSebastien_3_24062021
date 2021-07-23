@@ -9,6 +9,7 @@
     border-radius: 30px;
     @include box-shadow();
     transition: all 0.3s ease-out;
+    cursor: pointer;
 
     &:hover {
         @include btn-hover();
