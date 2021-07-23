@@ -2,10 +2,11 @@
     & h2 {
         text-align: center;
         font-family: $font-black;
+        margin: 40px 0 0 0;
 
         @include mobil-only {
             text-align: initial;
-            padding-left: 15px;
+            padding-left: 20px;
         }
     }
 }
@@ -18,7 +19,7 @@
     &__card {
         background: $background-page;
         border-radius: 10px;
-        @include box-shadow($background-page-darken, 0);
+        @include box-shadow-tab($background-page, 15px);
         font-family: $font-black;
         text-align: center;
         position: relative;
@@ -46,7 +47,7 @@
         }
     }
     ul li {
-        margin:30px;
+        margin: 0 30px 30px 30px;
         padding: 30px;
         font-size: 1.2em;
 
