@@ -5,8 +5,7 @@
         margin: 40px 0 0 0;
 
         @include mobil-only {
-            text-align: initial;
-            padding-left: 20px;
+            padding-right: 150px;
         }
     }
 }
