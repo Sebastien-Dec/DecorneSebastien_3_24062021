@@ -400,7 +400,7 @@ rest-tab__heart {
   margin: 40px 0 0 0; }
   @media screen and (max-width: 768px) {
     .operation h2 {
-      padding-right: 150px; } }
+      text-align: left; } }
 
 .tab {
   display: flex;
